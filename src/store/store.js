@@ -12,6 +12,5 @@ function managePosts(state = initialPosts, action) {
   }
 }
 const store = createStore(managePosts);
-store.subscribe(() => console.log(store.getState()));
-console.log(store.getState());
+
 export default store;

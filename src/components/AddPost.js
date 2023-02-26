@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function AddPost() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  //   console.log(useSelector((state) => state));
+
   const [name, setName] = useState(null);
   const [profilePictureLink, setprofilePictureLink] = useState(null);
   const [userName, setUserName] = useState(null);
