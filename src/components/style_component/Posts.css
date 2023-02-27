@@ -1,0 +1,11 @@
+.Posts {
+  padding: 40px;
+}
+.add-link {
+  padding: 20px 30px;
+  background-color: #20a6fc;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 15px;
+}

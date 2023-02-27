@@ -3,8 +3,8 @@ import "./style_component/SinglePost.css";
 
 export default function SinglePost(response) {
   return (
-    <div>
-      <div className="Post col-8">
+    <div className="SinglePost">
+      <div>
         <div className="header">
           {" "}
           <img
@@ -12,17 +12,16 @@ export default function SinglePost(response) {
             className="img-fluid icon"
             alt={response.data.name}
           />{" "}
-          <span className="name"> {response.data.name}</span>
-          <span> {response.data.nickname}</span>
-          <span> {response.data.date}</span>
+          <div className="header-info">
+            <span> {response.data.name}</span>
+            <span className="nickname"> {response.data.nickname}</span>
+          </div>
+          <span className="date"> {response.data.date}</span>
         </div>
-        <p>{response.data.content}</p>
         <div className="img-box">
-          <img
-            src={response.data.image}
-            alt="Post"
-            className="img-fluid w-50"
-          />
+          <p>{response.data.content}</p>
+
+          <img src={response.data.image} alt="Post" />
         </div>
         <Menu
           likeCount={response.data.likes}

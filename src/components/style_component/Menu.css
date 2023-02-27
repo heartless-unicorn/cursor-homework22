@@ -1,0 +1,39 @@
+.Menu {
+  padding: 20px;
+  display: flex;
+  color: #a3a3a3;
+}
+.Menu div {
+  padding-right: 25px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.Menu svg {
+  font-weight: 500;
+  font-size: 20px;
+
+  padding-right: 5px;
+}
+.button-comment,
+.button-like,
+.button-repost {
+  color: #d8d8d8;
+}
+.button-like:hover {
+  color: rgb(255, 135, 179);
+}
+.button-comment:hover {
+  color: rgb(112, 138, 255);
+}
+.button-repost:hover {
+  color: rgb(120, 255, 152);
+}
+.liked {
+  color: rgb(253, 0, 93);
+}
+.commented {
+  color: rgb(10, 54, 185);
+}
+.reposted {
+  color: rgb(0, 114, 19);
+}
